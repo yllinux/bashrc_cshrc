@@ -15,13 +15,8 @@ fi
 # System Environment
 ###################################################
 #umask 022         # Creat new file with rwxr-xr-x
-set    nobeep      # Doest beep when you are expanding
-set    history=2000
-set    savehist=2000
-set    autologout=off
-set    autolist
-set    autoexpand
-set    correct=cmd
+history=2000
+savehist=2000
 
 ###################################################
 # System PATH
