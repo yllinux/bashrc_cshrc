@@ -79,4 +79,7 @@ set    old2
 #alias cd chdir
 alias  cd     'set x=$cwd;chdir \!*;set old2=$old1;set old1=$x;unset x;set prompt="$cc%n@%m:$cg%~$c0>";ls'
 
+#其中\转义字符，阻止后面的命令被立即替换  !*代表上一个命令除掉第一个单词的剩下的所有部分，即为命令所带的参数和路径等等
+#任何时候，空格后按 Ctrl-D （或TAB）即可列出目录下内容，并保留已经输入的命令行内容，如果输入了几个字符后按 Ctrl+D，则列出以这些字符开头的文件名
+#alias  cd     'cd '\!*;ls'
 
